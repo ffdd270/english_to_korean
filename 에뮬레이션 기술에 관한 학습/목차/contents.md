@@ -1,0 +1,115 @@
+
+## Contents
+
+- Chapter 1. Introduction.
+      - 1. Motivation and purpose of the study.
+      - 2. What do we call an emulator?
+      - 3. Small history of emulation.
+      - 4. Related topics.
+- Chapter 2. Introduction to the process of emulation.
+   - 1. Basic structure/algortihm of an emulator.
+   - 2. The CPU emulation core.
+      - 2.1. CPU emulator: Interpreter
+      - 2.2. CPU emulator: Binary Translation.
+   - 3. The memory emulation subsistem.
+   - 4. CPU and emulated devices communication. Interrupts and timing.
+   - 5. Graphic hardware emulation.
+   - 6. Sound hardware emulation.
+   - 7. Other devices.
+   - 8. Testing the emulator.
+   - 9. Searching for information and other aspects of emulation.
+- Chapter 3. CPU emulation: Interpreters.
+   - 1. Basic interpreter CPU emulator.
+      - The CPU status.
+      - The fetch-decode loop.
+      - Instruction emulation.
+      - Flags.
+      - Memory.
+      - Interrupts.
+      - Core interface.
+      - Appendix A: Space Invaders/i8080 Tutorial.
+   - 2. Assembly Emulators.
+         - Portabilty vs performace.
+         - Similiraties between CPUs.
+         - Register usage.
+         - Optimizations.
+         - Code emitters vs assembly macros.
+   - 3. Threaded Code.
+      - Basic concept behind threaded code.
+      - Types of threaded code.
+      - Implementation of threaded code.
+      - Related works.
+   - 4. Advanced questions about interpreters.
+      - Intepreters for simulators.
+      - First pass interpreter and profiler.
+      - Advanced: Inlining. Pipelined interpreters for VLIW CPUs.
+      - Integrated CPU cores.
+      - Using library CPU cores.
+      - Related works.
+- Chapter 4. CPU emulation: Binary translation.
+      - 1. Introduction to binary translation.
+         - Binary translation.
+         - Types of binary translation.
+         - Basic concepts.
+         - Examples.
+      - 2. Static binary translation.
+         - Basic algorithm.
+         - Intermediate representations.
+         - Local and global optimizations.
+         - Code generation.
+         - Run-time.
+         - Implementations.
+      - 3. Dynamic binary translation.
+         - Basic algorithm of dynamic binary translation.
+         - Translation cache.
+         - Interpreter and profiler.
+         - Translation unit.
+         - Optimizations.
+         - Register allocation.
+         - Code generation.
+         - Implementations.
+- Chapter 5. Memory, Interrupts and Timing.
+      - 1. Memory Emulation.
+         - Memory Map. Region list.
+         - Memory banking.
+         - Other implementations.
+         - Memory management unit (MMU).
+         - Endianness and CPU data size.
+      - 2. Interrupts and exceptions.
+         - Interrupts.
+         - Exceptions.
+      - 3. Timing.
+      - 4. Others.
+         - High level emulation (HLE).
+         - Float point emulation.
+         - Vector instruction emulation.
+- Chapter 6. Graphic emulation.
+   - 1. Graphics in computers.
+   - 2. Types of graphic hardware.
+   - 3. Tiled basedgraphic engine emulation.
+      - The SMS VDP.
+         - The background layer.
+         - The sprite layer.
+         - Handling priorities.
+         - The palette.
+         - Vertical and horziontal interrupts.
+      - Emulating the SMS VDP.
+      - A more advanced VDP: Genesis.
+   - 4. Plain 2D graphic generation.
+   - 5. How to find more information.
+- Chapter 7. Sound emulation.
+   - 1. Sound in computers.
+   - 2. Types of sound hardware.
+   - 3. Wave generator based sound hardware.
+      - PSG emulation.
+      - FM emulation.
+   - 4. Sample based sound generation.
+   - 5. How to find more information.
+- Chapter 8. Information, testing and legal.
+   - 1. The information. Research. Reverse engineering.
+   - 2. Testing and debugging.
+   - 3. Legal and commercial aspects of emulation.
+- Chapter 9. Conclusions.
+   - 1. Initial objectives.
+   - 2. Objectives acomplished.
+   - 3. Further work.
